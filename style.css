@@ -1,0 +1,42 @@
+.container {
+    padding: 40px;
+}
+
+h1 {
+
+}
+
+h2 {
+
+}
+
+#chkboxes {
+    padding: 10px;
+}
+
+.chkbox{
+    padding: 10px;
+    float: left;
+}
+
+#output {
+    align-content: center;
+    clear: both;
+    float: left;
+}
+
+.btn {
+    float: left;
+}
+
+#password {
+
+}
+
+#generate {
+
+}
+
+#copy {
+
+}
