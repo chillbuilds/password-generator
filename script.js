@@ -1,4 +1,3 @@
-var chartype = 0;  //updates with user selection
 
 var str = "!@#$%^&*()_+=-[]{}\/?";
 var sym = str.split("");
@@ -17,17 +16,27 @@ console.log(num);
 console.log(low);
 console.log(cap);
 
-var passlength = 0;
+function lengthCheck(){
+  
+}
 
 function boxCheck() {
   var symbox = document.getElementById("symchk");
   var numbox = document.getElementById("numchk");
-  var symbox = document.getElementById("lowchk");
-  var symbox = document.getElementById("capchk");
+  var lowbox = document.getElementById("lowchk");
+  var capbox = document.getElementById("capchk");
+  var passLength = document.getElementById("inputLength");
 
-  if(symbox.checked == true){
-      alert("Your function worked!");
-  // }else{
-      
-  // }
-}}
+  if(symbox.checked == true || numbox.checked == true || 
+    lowbox.checked == true || capbox.checked == true){
+    alert("A box is checked")
+    }else{
+      alert("a box isn't checked")
+    }
+
+if(passLength > 7){
+  alert("length is acceptable");
+}else{
+  alert("length is unacceptable")
+}
+}
