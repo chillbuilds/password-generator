@@ -1,13 +1,18 @@
+body {
+  background-image: url("https://st2.depositphotos.com/2757500/9763/v/950/depositphotos_97639724-stock-illustration-seamless-pattern-of-burgers-sandwiches.jpg");
+  background-size: 500px 400px;
+}
+
 #pageBody {
   position: relative;
-  margin-top: 60px;
-  /* margin-left: 10px; */
-  padding-bottom: 20px;
+  font-family: 'Mansalva', cursive;
+  margin-top: 40px;
+  padding-bottom: 30px;
   padding-right: 30px;
   width: 100%;
-  color: #228697;
+  color: #efff0d;
   font-weight: bold;
-  background: rgba(40, 160, 180, .7);
+  background: rgba(173, 14, 14, 0.8);
   border-radius: 10px;
 }
 
@@ -30,7 +35,7 @@ p {
 }
 
 #inputBody {
-    margin-left: 60px;
+  margin-left: 60px;
 }
 
 #chkBoxContainer {
@@ -39,10 +44,10 @@ p {
 }
 
 #inputNum {
-    width: 50%;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    margin-left: 20px;
+  width: 50%;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-left: 20px;
 }
 
 .chkBox {
@@ -51,32 +56,125 @@ p {
 }
 
 #buttonContainer {
+  font-size: 20px;
   padding: 10px;
   margin-top: 30px;
   float: left;
+  opacity: 0.8;
 }
 
-.button {
-  margin-right: 20px;
-  
+#generateButton {
+  font-weight: bold;
+  color: rgb(173, 14, 14);
+  margin: 20px;
+  padding: 10px 65px;
+  background: #efff0d;
+  border-radius: 35px;
+  border: none;
+}
+
+#copyButton {
+  font-weight: bold;
+  color: rgb(173, 14, 14);
+  padding: 10px 65px;
+  margin-left: 35px;
+  background: #efff0d;
+  border-radius: 35px;
+  border: none;
 }
 
 #passwordHolder {
-    position: relative;
-    float: left;
-    width: 100%;
-    left: 8px;
-    font-size: 26px;
-    padding-top: 10px;
+  position: relative;
+  float: left;
+  width: 100%;
+  left: 8px;
+  font-size: 26px;
+  padding-top: 10px;
 }
 
 #password {
   width: 80%;
-  height: 130%;
+  height: 135%;
+}
+
+input[type="checkbox"] {
+  transform: scale(1.25);
+}
+
+@media screen and (max-width: 768px) {
+  #generateButton {
+    padding: 8px 55px;
+
+  }
+  
+  #copyButton {
+    padding: 8px 55px;
+    margin-left: 0px;
+  }
 }
 
 @media screen and (max-width: 640px) {
   #passwordHolder {
     font-size: 12px;
   }
+
+  #pageBody {
+    padding-bottom: 5px;
+  }
+
+  #buttonContainer {
+    font-size: 14px;
+    padding-left: 0px;
+    margin-top: 10px;
+  }
+
+  .pageText {
+    position: relative;
+    font-size: 20px;
+    font-weight: bolder;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    align-content: stretch;
+  }
+
+  #generateButton {
+    margin: 10px;
+    margin-right: 0px;
+    padding: 7px 20px;
+    background: #efff0d;
+    border-radius: 25px;
+    border: none;
+  }
+
+  #copyButton {
+    position: relative;
+    padding: 7px 25px;
+    margin-left: 10px;
+    background: #efff0d;
+    border-radius: 25px;
+    border: none;
+    left: 7px;
+  }
 }
+
+@media screen and (max-width: 320px) {
+  #generateButton {
+    margin-left: 0px;
+  }
+
+  #copyButton {
+    margin-left: 0px;
+  }
+
+  #chkBoxContainer {
+    font-size: 12px;
+    width: 260px;
+    padding-left: 0px;
+  }
+
+  .pageText {
+    margin-bottom: 0px;
+  }
+}
+

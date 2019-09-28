@@ -18,6 +18,8 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <link href="https://fonts.googleapis.com/css?family=Mansalva&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
   </head>
   <body>
     <div class="container">
@@ -57,14 +59,15 @@
         </div>
         <div class="row">
           <div id="passwordHolder">
-            <textarea readonly id="password" type="text" value=""></textarea>
+            <textarea placeholder="Your Secure Password" readonly id="password" type="text" value=""></textarea>
           </div>
         </div>
         <div class="row">
-          <div id="buttonContainer">
-            <button onclick="generate()" class="button">Generate</button>
-            <button onclick="copyFunction()">Copy</button>
-          </div>
+          <div class="col-12">
+            <div id="buttonContainer">
+              <button onclick="generate()" id="generateButton">Generate</button>
+              <button onclick="copyFunction()" id="copyButton">Copy</button>
+            </div>
           </div>
         </div>
       </div>
