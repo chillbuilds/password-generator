@@ -1,42 +1,57 @@
-.container {
-    padding: 40px;
+#pageBody {
+  position: relative;
+  margin-top: 60px;
+  /* margin-left: 10px; */
+  padding-bottom: 20px;
+  padding-right: 30px;
+  width: 100%;
+  background: #999999;
 }
 
 h1 {
-
+    text-align: center;
 }
 
-h2 {
-
+.pageText {
+  font-size: 26px;
+  font-weight: bolder;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
 
-#chkboxes {
-    padding: 10px;
+#inputBody {
+    margin-left: 60px;
 }
 
-.chkbox{
-    padding: 10px;
+#chkBoxContainer {
+  width: 240px;
+  padding-left: 10px;
+}
+
+#inputNum {
+    width: 50%;
+}
+
+.chkBox {
+  float: left;
+  padding: 8px;
+}
+
+#buttonContainer {
+  padding: 10px;
+  float: left;
+  clear: both;
+}
+
+.button {
+  margin-right: 20px;
+  
+}
+
+#passwordHolder {
+    position: relative;
     float: left;
-}
-
-#output {
-    align-content: center;
     clear: both;
-    float: left;
-}
-
-.btn {
-    float: left;
-}
-
-#password {
-
-}
-
-#generate {
-
-}
-
-#copy {
-
+    left: 8px;
 }
