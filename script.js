@@ -1,4 +1,4 @@
-var sym = "!@#$%^&*()_+=-";
+var sym = "!@#$%^&*()_+=";
 var num = "0123456789";
 var low = "abcdefghijklmnopqrstuvwxyz";
 var cap = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
