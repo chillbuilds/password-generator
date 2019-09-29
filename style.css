@@ -12,7 +12,7 @@ body {
   width: 100%;
   color: #efff0d;
   font-weight: bold;
-  background: rgba(173, 14, 14, 0.8);
+  background: rgba(173, 14, 14, 0.85);
   border-radius: 10px;
 }
 
@@ -101,10 +101,35 @@ input[type="checkbox"] {
   transform: scale(1.25);
 }
 
+textarea {
+  background: #efff0d;
+color: rgb(173, 14, 14);
+border-radius: 8px;
+border: none;
+opacity: .8;
+}
+
+textarea:focus {
+  outline:0;
+}
+
+input {
+  background: #efff0d;
+color: rgb(173, 14, 14);
+border-radius: 8px;
+border: none;
+opacity: .8;
+}
+
+input:focus {
+  outline:0;
+}
+
+#generateButton:focus {outline:0;}
+
 @media screen and (max-width: 768px) {
   #generateButton {
     padding: 8px 55px;
-
   }
   
   #copyButton {
@@ -158,7 +183,7 @@ input[type="checkbox"] {
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 380px) {
   #generateButton {
     margin-left: 0px;
   }
@@ -169,7 +194,7 @@ input[type="checkbox"] {
 
   #chkBoxContainer {
     font-size: 12px;
-    width: 260px;
+    width: 180px;
     padding-left: 0px;
   }
 

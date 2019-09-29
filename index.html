@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Password Generator</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -29,30 +28,30 @@
           <div class="row">
             <div class="pageText">
               Password Length
-              <input type="number" id="inputNum" value="" onkeyup="numUpdate()" />
+              <input type="number" id="inputNum" value="" placeholder=" 8 - 128 characters"/>
             </div>
           </div>
         <div class="row">
           <div class="pageText">
             <div id="inputCriteria">
-            Input Criteria
+            Password Criteria
             </div>
           </div>
           <div id="chkBoxContainer">
             <div class="chkBox">
-              <input id="symChk" type="checkbox" onchange="boxCheckUpdate()" />
+              <input id="symChk" type="checkbox" />
               Symbols
             </div>
             <div class="chkBox">
-              <input id="numChk" type="checkbox" onchange="boxCheckUpdate()" />
+              <input id="numChk" type="checkbox" />
               Numbers
             </div>
             <div class="chkBox">
-              <input id="lowChk" type="checkbox" onchange="boxCheckUpdate()" />
+              <input id="lowChk" type="checkbox" />
               Lowercase
             </div>
             <div class="chkBox">
-              <input id="capChk" type="checkbox" onchange="boxCheckUpdate()" />
+              <input id="capChk" type="checkbox" />
               Uppercase
             </div>
           </div>
@@ -65,12 +64,13 @@
         <div class="row">
           <div class="col-12">
             <div id="buttonContainer">
-              <button onclick="generate()" id="generateButton">Generate</button>
-              <button onclick="copyFunction()" id="copyButton">Copy</button>
+              <button id="generateButton">Generate</button>
+              <button id="copyButton">Copy</button>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
